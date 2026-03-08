@@ -1,9 +1,9 @@
 #!/bin/bash  
 
 export UUID=${UUID:-'35a793df-bd4a-4ded-979e-f159afcaf364'} # 如开启哪吒v1,不同的平台需要改一下，否则会覆盖
-export NEZHA_SERVER=${NEZHA_SERVER:-'agent.shiyuyu.qzz.io:80'}       # v1哪吒填写形式：nezha.xxx.com:8008,v0哪吒填写形式：nezha.xxx.com
+export NEZHA_SERVER=${NEZHA_SERVER:-''}       # v1哪吒填写形式：nezha.xxx.com:8008,v0哪吒填写形式：nezha.xxx.com
 export NEZHA_PORT=${NEZHA_PORT:-''}           # v1哪吒不要填写这个,v0哪吒agent端口为{443,8443,2053,2083,2087,2096}其中之一时自动开启tls
-export NEZHA_KEY=${NEZHA_KEY:-'YKbMyvNfa3xk1HehsWt7zI0KWvCODcCS'}             # 哪吒v0-agent密钥或v1的NZ_CLIENT_SECRET
+export NEZHA_KEY=${NEZHA_KEY:-''}             # 哪吒v0-agent密钥或v1的NZ_CLIENT_SECRET
 export ARGO_DOMAIN=${ARGO_DOMAIN:-''}         # 固定隧道域名,留空即启用临时隧道
 export ARGO_AUTH=${ARGO_AUTH:-''}             # 固定隧道token或json,留空即启用临时隧道,json获取:https://json.zone.id
 export CFIP=${CFIP:-'saas.sin.fan'}           # argo节点优选域名或优选ip
